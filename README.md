@@ -19,7 +19,7 @@ public async SVoid ShowVoid()
 public async STask ShowTask1()
 {
     await STask.CompletedTask;
-
+}
 /// <summary>
 /// 替代async Task<int>
 /// </summary>

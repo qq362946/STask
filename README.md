@@ -11,6 +11,7 @@ STask一个高效没有GC的单线程的async/await
 public async SVoid ShowVoid()
 {
     await ShowTask1();
+}
 
 /// <summary>
 /// 替代async Task
@@ -20,6 +21,7 @@ public async STask ShowTask1()
 {
     await STask.CompletedTask;
 }
+
 /// <summary>
 /// 替代async Task<int>
 /// </summary>

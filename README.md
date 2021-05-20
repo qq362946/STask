@@ -29,10 +29,10 @@ public async STask ShowTask1()
 public STask<int> ShowTask2()
 {
     // 替代TaskCompletionSource
-    STaskCompletionSource tcs1 = new STaskCompletionSource();
+    var tcs1 = STask.Create();
     // 替代TaskCompletionSource<int>
-    STaskCompletionSource<int> tcs2 = new STaskCompletionSource<int>();
-    return tcs2.Task;
+    STask<int> tcs2 = STask<int>.Create();
+    return tcs2;
 }
 
 // 运行ShowVoid
